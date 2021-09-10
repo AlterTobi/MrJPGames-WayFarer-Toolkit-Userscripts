@@ -1,5 +1,5 @@
 # WayFarerMinus Userscripts
- My Userscripts created to work with WayFarerMinus
+ My Userscripts created to work with WayFarer Toolkit
 
 
-These are my scripts for WayFarer-, and will re-implement some of the original WayFarer+ functionality.
+These are my scripts for WayFarer Toolkit, and will re-implement some of the original WayFarer+ functionality.
