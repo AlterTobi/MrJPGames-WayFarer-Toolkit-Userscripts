@@ -27,8 +27,8 @@
             lastPane.parentElement.insertBefore(SVMapElement, lastPane.nextSibling);
         }
 
-        var lat = window.wfpp.nominationsApp.selectedNomination.nomination.lat;
-        var lng = window.wfpp.nominationsApp.selectedNomination.nomination.lng;
+        var lat = window.wft.nominationsApp.selectedNomination.nomination.lat;
+        var lng = window.wft.nominationsApp.selectedNomination.nomination.lng;
 
         SVMap = new google.maps.Map(document.getElementById("pano"),{
             center: {
@@ -48,7 +48,7 @@
                 lat: parseFloat(lat),
                 lng: parseFloat(lng)
             },
-            title: window.wfpp.nominationsApp.selectedNomination.nomination.title
+            title: window.wft.nominationsApp.selectedNomination.nomination.title
         });
         var panorama = SVMap.getStreetView();
         var client = new google.maps.StreetViewService;
@@ -72,9 +72,8 @@
             }
         });
 
-        console.log("[WayFarer-] Setting Nomination Streetview image");
+        console.log("[NomSVMap] Setting Nomination Streetview image");
     }
 
-    window.addEventListener("WFMNominationSelected", setStreetView);
-        console.log("test");
+    window.addEventListener("WFTNominationSelected", setStreetView);
 })();
