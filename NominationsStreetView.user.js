@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nomination page StreetView
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      1.0
 // @description  try to take over the world!
 // @author       You
 // @match        https://wayfarer.nianticlabs.com/*
@@ -24,6 +24,7 @@
             let SVMapElement = document.createElement("div");
             SVMapElement.id = "pano";
             SVMapElement.style.height = "480px";
+            SVMapElement.style.marginTop = "10px";
             lastPane.parentElement.insertBefore(SVMapElement, lastPane.nextSibling);
         }
 
