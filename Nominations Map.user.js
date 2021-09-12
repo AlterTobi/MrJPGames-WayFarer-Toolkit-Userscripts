@@ -2,8 +2,8 @@
 // @name         Nominations map
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  Adds a map with all your nominations to the nominations page
-// @author       MrJPGames
+// @description  try to take over the world!
+// @author       You
 // @match        https://wayfarer.nianticlabs.com/*
 // @icon         https://wayfarer.nianticlabs.com/imgpub/favicon-256.png
 // @grant        none
@@ -97,6 +97,7 @@
     function createElements() {
         const container = document.createElement('div');
         container.setAttribute('class', 'wrap-collabsible')
+        container.id = "nomMap";
 
         const collapsibleInput = document.createElement("input");
         collapsibleInput.id = "collapsed-map";
@@ -123,7 +124,7 @@
         container.appendChild(collapsibleLabel);
         container.appendChild(collapsibleContent);
 
-        const sectionElement = document.getElementsByTagName("mat-sidenav-content")[0];
+        const sectionElement = document.getElementsByTagName("app-nominations")[0];
         sectionElement.insertBefore(container, sectionElement.children[0]);
 
         return mapElement;
@@ -149,6 +150,9 @@
             nomList = window.wft.nominationsApp.listData.nominationsList.nominations;
             nomList = window.wft.nominationsApp.listData.nominationsList.nominations;
             updateMap(window.wft.nominationsApp.listData.nominationsList.nominations, nominationMap);
+        } else if (document.getElementById("nomMap") === null){
+            addMap(window.wft.nominationsApp.listData.nominationsList.nominations, createElements());
+
         }
     }
 
