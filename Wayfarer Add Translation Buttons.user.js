@@ -2,10 +2,10 @@
 // @name         Wayfarer Add Translation Buttons
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @description  Adds buttons to translate parts or all of the text associated with a wayspot
+// @author       MrJPGames
 // @match        https://wayfarer.nianticlabs.com/*
-// @icon         https://www.google.com/s2/favicons?domain=github.com
+// @icon         https://wayfarer.nianticlabs.com/imgpub/favicon-256.png
 // @grant        none
 // ==/UserScript==
 

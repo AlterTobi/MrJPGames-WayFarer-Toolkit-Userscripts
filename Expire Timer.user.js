@@ -2,8 +2,8 @@
 // @name         Expire Timer
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @description  Adds a simple timer to the top of the screen showing how much time you have left on the current review.
+// @author       MrJPGames
 // @match        https://wayfarer.nianticlabs.com/*
 // @icon         https://wayfarer.nianticlabs.com/imgpub/favicon-256.png
 // @grant        none

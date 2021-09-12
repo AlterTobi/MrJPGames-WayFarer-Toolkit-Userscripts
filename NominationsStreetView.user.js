@@ -2,10 +2,10 @@
 // @name         Nomination page StreetView
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  try to take over the world!
-// @author       You
+// @description  Adds the streetview view a reviewer will see on your own nominations!
+// @author       MrJPGames
 // @match        https://wayfarer.nianticlabs.com/*
-// @icon         https://www.google.com/s2/favicons?domain=nianticlabs.com
+// @icon         https://wayfarer.nianticlabs.com/imgpub/favicon-256.png
 // @grant        none
 // ==/UserScript==
 
