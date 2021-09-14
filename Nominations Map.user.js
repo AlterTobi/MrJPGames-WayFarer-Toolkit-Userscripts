@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nominations map
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       You
 // @match        https://wayfarer.nianticlabs.com/*
@@ -135,7 +135,7 @@
     function initNomMap() {
         console.log("t", window.wft.nominationsApp.listData.nominationsList.nominations);
         if (typeof(google) === 'undefined' || window.wft.nominationsApp.listData.nominationsList.nominations === []) {
-            setTimeout(loadMap, 100);
+            setTimeout(initNomMap, 100);
             return;
         }
         console.log(nomList);
